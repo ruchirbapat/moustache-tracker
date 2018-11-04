@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "509474181845",
+    "firebase_url": "https://moustachetracker.firebaseio.com",
+    "project_id": "moustachetracker",
+    "storage_bucket": "moustachetracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509474181845:android:56958d8fa92b4abe",
+        "android_client_info": {
+          "package_name": "com.charstar.moustachetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509474181845-khne8lgc9r1uuj8fhgkupco5fhcimo1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3MJiPc2nezh7Wmm55Lq6FCaVnf4YrDdM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
