@@ -1,25 +1,24 @@
 package com.charstar.moustachetracker;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.FrameMetrics;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.gms.vision.CameraSource;
-
-import android.hardware.Camera;
-import android.widget.FrameLayout;
+import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleObserver;
+import android.arch.lifecycle.OnLifecycleEvent;
+import com.otaliastudios.cameraview.CameraView;
 
 public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test); // TODO: change later
+        setContentView(R.layout.meme); // TODO: change later
+
+        CameraView camera = findViewById(R.id.camera_view);
+
+
 
         /*
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -33,17 +32,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-*/
-
-        Camera camera = Camera.open();
-       /* try { camera = Camera.open();  }
-        catch (Exception e) {
-            System.out.println("Camera is not available!"); // Camera is not available (in use or does not exist)
-        } */
-        CameraPreviewHandler cameraHandler = new CameraPreviewHandler(this, camera);
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
-        preview.addView(cameraHandler);
-
+        */
 
         // TODO: make sure the camera is properly closed when the app closes
     }
