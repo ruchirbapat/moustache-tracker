@@ -22,7 +22,8 @@ allprojects {
     }
 }
 
-ext { googlePlayServicesVersion = "15.0.1" }
+//ext { googlePlayServicesVersion = "15.0.1" }
+ext { googlePlayServicesVersion = "16.1.0" }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
